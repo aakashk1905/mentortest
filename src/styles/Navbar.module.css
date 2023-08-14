@@ -1,0 +1,86 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 6rem;
+  background-color: #eee;
+}
+
+.logo {
+  filter: grayscale(100%);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 123.5%;
+  font-weight: 500;
+  gap: 2rem;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.links a {
+  color: rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.links a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.25);
+  fill: rgba(0, 0, 0, 0.25);
+
+  transition: 0.2s;
+}
+
+.profile span {
+  padding-left: 0.4rem;
+  padding-right: 0.5rem;
+}
+
+.profile:hover {
+  color: rgba(0, 0, 0, 0.8);
+  fill: rgba(0, 0, 0, 0.8);
+}
+
+.active {
+  color: rgba(0, 0, 0, 1) !important;
+}
+
+@media (max-width: 830px) {
+  .navbar {
+    padding-top: 2rem;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .profile {
+    background-color: #000000;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+  }
+  .profile span {
+    color: white;
+  }
+  .profile img {
+    display: none;
+  }
+  .profile svg {
+    fill: white;
+  }
+}

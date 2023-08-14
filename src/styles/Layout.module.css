@@ -1,0 +1,21 @@
+.main {
+  max-width: min(1200px, 90%);
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.root {
+  /* padding: 0 6rem; */
+}
+
+@media (max-width: 830px) {
+  .main {
+    max-width: none;
+  }
+
+  .root {
+    /* padding: 0 6%; */
+    /* padding-top: 2rem; */
+  }
+}

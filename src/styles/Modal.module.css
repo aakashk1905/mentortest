@@ -1,0 +1,264 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(74, 73, 73, 0.85);
+  z-index: 100;
+}
+
+.container.rounded {
+  border-radius: 20px;
+}
+
+.module {
+  background: white;
+  width: 80%;
+  max-width: 600px;
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.module * {
+  pointer-events: all;
+}
+
+.module button {
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem;
+  background-color: #bababa;
+  color: black;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.feedback h5 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.feedback .input {
+  position: relative;
+  border: 1px solid #cacaca;
+  border-radius: 20px;
+}
+
+.feedback .input .empty_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #797676;
+  width: 100%;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 123.5%;
+
+  display: none;
+  pointer-events: none;
+}
+
+.feedback .input .empty_overlay.show {
+  display: block;
+}
+
+.feedback textarea {
+  resize: none;
+  border-radius: 20px;
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding-top: 0;
+}
+
+.feedback textarea::-webkit-scrollbar-track {
+  margin-top: 1rem;
+}
+
+.feedback .input .files {
+  padding: 1rem;
+}
+
+.feedback .input .files div {
+  background-color: #f3f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1000px;
+  padding: 0.5rem 1rem;
+}
+
+.feedback .input .files div + div {
+  margin-top: 0.5rem;
+}
+
+.feedback .input .files div svg {
+  cursor: pointer;
+}
+
+.feedback .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback .action_btns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-left: 2rem;
+  color: #515151;
+}
+
+.feedback .action_btns div + div svg {
+  margin-bottom: 0.2rem;
+}
+
+.feedback .actions input {
+  display: none;
+}
+
+.feedback .actions span {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback button {
+  margin: 0;
+  margin-right: 0.5rem;
+}
+
+.feedback .links {
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.feedback .link {
+  cursor: pointer;
+  position: relative;
+}
+.feedback .link div {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f2f0f0;
+  z-index: 100;
+  padding: 0.5rem;
+  cursor: default;
+}
+
+.feedback .link div a,
+.feedback .link div button {
+  background: none;
+  padding: 0;
+  display: inline;
+  margin: 0;
+  color: black;
+  cursor: pointer;
+}
+
+.feedback .link div span {
+  font-weight: 400;
+}
+
+.feedback .link:hover div {
+  display: block;
+}
+
+.link_modal {
+  position: relative;
+}
+
+.link_modal svg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.link_modal h5 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.link_modal label {
+  background-color: #e4e4e4;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.link_modal label span {
+  font-size: 16px;
+  color: #595959;
+  font-weight: 500;
+}
+
+.link_modal input {
+  background: none;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+}
+
+.link_modal button {
+  background-color: #717171 !important;
+  color: white;
+  margin: auto;
+}
+
+.feedback_cont {
+  border: 1px solid #cacaca;
+  border-radius: 20px;
+  padding: 0 1rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  font-weight: 500;
+}
+
+.feedback_cont span {
+  width: 100%;
+  font-weight: 300;
+}
+
+.feedback_cont div {
+  display: flex;
+  width: 100%;
+}
+
+.feedback_cont button.yes {
+  background: none;
+  border: 1px solid #cacaca;
+}
